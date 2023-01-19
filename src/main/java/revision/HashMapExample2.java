@@ -8,6 +8,7 @@ public class HashMapExample2 {
     
     public void example() {
 
+        // use this instead of hashmap, more functions to manipulate
         Map<String, Integer> pc = new ConcurrentHashMap<>();
 
         pc.put("dell", 1000);

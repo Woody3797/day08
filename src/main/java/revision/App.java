@@ -1,6 +1,7 @@
 package revision;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -16,16 +17,17 @@ public final class App {
      */
     public static void main(String[] args) {
 
-        ArraySort arr = new ArraySort();
-        arr.example();
-        arr.example2();
-
-        CollectionSort numarr = new CollectionSort();
-        numarr.example();
-        numarr.example2();
+        CollectionSort cs = new CollectionSort();
+        cs.example2();
 
         HashMapExample2 chme = new HashMapExample2();
         chme.example();
+
+        LinkedListExample list = new LinkedListExample();
+        list.example();
+
+        StackExample se = new StackExample();
+        se.example();
 
     }
 }

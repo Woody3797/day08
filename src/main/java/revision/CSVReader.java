@@ -14,18 +14,14 @@ public class CSVReader {
 
     public List<Employee> employees = new ArrayList<>();
 
-    Scanner scanner = new Scanner(System.in);
-
     public List<Employee> readEmployees(String fileName) throws IOException {
 
         FileReader fr = new FileReader(fileName);
         BufferedReader br = new BufferedReader(fr);
         String line = "";
-        br.readLine();
-
+        line = br.readLine();
 
         while ((line = br.readLine()) != null) {
-            line = br.readLine();
             String[] str = line.split(COMMA_DELIMITER);
 
             Employee employee = new Employee(str[0], str[1], str[2], str[3], str[4], Integer.parseInt(str[5]));
@@ -34,6 +30,5 @@ public class CSVReader {
         br.close();
         fr.close();
         return employees;
-
     }
 }

@@ -19,10 +19,12 @@ public class CSVWriter {
         Employee emp1 = new Employee("1234", "john", "SWE", "coder", "john@mail.com", 14000);
         Employee emp2 = new Employee("12345", "wes", "SWE", "coder", "wes@mail.com", 11000);
         Employee emp3 = new Employee("111", "ted", "SWE", "coder", "ted@mail.com", 13000);
+        Employee emp4 = new Employee("321", "fred", "SDE", "sec", "fred@mail.com", 12300);
 
         employees.add(emp1);
         employees.add(emp2);
         employees.add(emp3);
+        employees.add(emp4);
 
         return employees;
     }

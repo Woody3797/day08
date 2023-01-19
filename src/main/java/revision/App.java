@@ -18,14 +18,13 @@ public final class App {
      */
     public static void main(String[] args) throws IOException {
 
-        CSVWriter csvw = new CSVWriter();
-        List<Employee> employees = csvw.generateEmployees();
-        csvw.writeToCSV(employees, "./test.txt");
+        // CSVWriter csvw = new CSVWriter();
+        // List<Employee> employees = csvw.generateEmployees();
+        // csvw.writeToCSV(employees, "./test.txt");
 
 
         CSVReader csvr = new CSVReader();
         List<Employee> employeeArr = csvr.readEmployees("./test.txt");
         System.out.println(employeeArr);
-
     }
 }

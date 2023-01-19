@@ -1,0 +1,4 @@
+staffNo, fullName, department, role, emailAdd, salary
+1234,john,SWE,coder,john@mail.com,14000
+12345,wes,SWE,coder,wes@mail.com,11000
+111,ted,SWE,coder,ted@mail.com,13000

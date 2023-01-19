@@ -1,8 +1,8 @@
 package revision;
 
-import java.util.HashMap;
+import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Hello world!
@@ -14,20 +14,18 @@ public final class App {
     /**
      * Says hello to the world.
      * @param args The arguments of the program.
+     * @throws IOException
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        CollectionSort cs = new CollectionSort();
-        cs.example2();
+        CSVWriter csvw = new CSVWriter();
+        List<Employee> employees = csvw.generateEmployees();
+        csvw.writeToCSV(employees, "./test.txt");
 
-        HashMapExample2 chme = new HashMapExample2();
-        chme.example();
 
-        LinkedListExample list = new LinkedListExample();
-        list.example();
-
-        StackExample se = new StackExample();
-        se.example();
+        CSVReader csvr = new CSVReader();
+        List<Employee> employeeArr = csvr.readEmployees("./test.txt");
+        System.out.println(employeeArr);
 
     }
 }

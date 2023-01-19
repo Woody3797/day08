@@ -13,6 +13,10 @@ public final class App {
      */
     public static void main(String[] args) {
 
-        
+        ArraySort arr = new ArraySort();
+        arr.example();
+
+        CollectionSort numarr = new CollectionSort();
+        numarr.example();
     }
 }

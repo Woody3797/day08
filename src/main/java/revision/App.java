@@ -1,7 +1,6 @@
 package revision;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -18,9 +17,9 @@ public final class App {
      */
     public static void main(String[] args) throws IOException {
 
-        // CSVWriter csvw = new CSVWriter();
-        // List<Employee> employees = csvw.generateEmployees();
-        // csvw.writeToCSV(employees, "./test.txt");
+        CSVWriter csvw = new CSVWriter();
+        List<Employee> employees = csvw.generateEmployees();
+        csvw.writeToCSV(employees, "./test.txt");
 
 
         CSVReader csvr = new CSVReader();

@@ -73,8 +73,8 @@ public class Employee implements Comparable<Employee> {
     }
 
     @Override
-    public int compareTo(Employee o) {
-        return this.getFullName().compareTo(o.getFullName());
+    public int compareTo(Employee e) {
+        return this.getFullName().compareToIgnoreCase(e.getFullName());
     }
 
     
